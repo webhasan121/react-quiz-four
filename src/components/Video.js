@@ -5,7 +5,7 @@ export default function Video() {
     <a href="quiz.html">
       <div className={classes.video}>
         <img src={image} alt="video title" />
-        <p>#23 React Hooks Bangla - React useReducer hook 4040</p>
+        <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
         <div className={classes.qmeta}>
           <p>10 Questions</p>
           <p>Score : Not taken yet</p>
