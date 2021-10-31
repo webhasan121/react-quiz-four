@@ -21,12 +21,12 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const auth = getAuth();
-    const unsubcribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       setcurrentUser(user);
       setloading(false);
     });
 
-    return unsubcribe;
+    return unsubscribe;
   }, []);
   //signUp function
   async function signup(email, password, username) {
@@ -51,7 +51,7 @@ export function AuthProvider({ children }) {
   }
 
   //logout function
-  function logout(params) {
+  function logout() {
     const auth = getAuth();
     return signOut(auth);
   }
